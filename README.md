@@ -12,13 +12,13 @@ Role Variables
 --------------
 
 Fully qualified domain name of your Nagios Server
-
-	`nagios_server_fqdn: "mynagios.mydomain.com"``
-
+```
+	nagios_server_fqdn: "mynagios.mydomain.com"
+```
 The fully qualified domain name or IP address of the machine you are adding to be monitored
-
-	`server_fqdn: "myserver-to-monitor.com"``
-
+```
+	server_fqdn: "myserver-to-monitor.com"
+```
 
 Dependencies
 ------------
@@ -33,7 +33,7 @@ Example Playbook
 	  vars_files:
 	    - vars/main.yml
 	  roles:
-	    - { role: stancel.install-bareos-client }
+	    - { role: stancel.install-nagios-client }
 
 
 or 
@@ -43,7 +43,7 @@ or
 		nagios_server_fqdn: "nagios.mydomain.com"
 		server_fqdn: "myserver-to-monitor.com"
 	  roles:
-	    - stancel.install-bareos-client 
+	    - { role: stancel.install-nagios-client }
 
 License
 -------

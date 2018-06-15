@@ -3,17 +3,11 @@ galaxy_info:
   description: Installs the Nagios/Incinga NPRE Client and opens the needed ports to communicate with the Nagios server component
   company: YourOnlineDept.com
 
-
   license: BSD
 
   min_ansible_version: 2.4
 
-  # If this a Container Enabled role, provide the minimum Ansible Container version.
-  # min_ansible_container_version:
-
-
-  #github_branch:
-
+  github_branch: master
 
   platforms:
   - name: Ubuntu
@@ -22,14 +16,14 @@ galaxy_info:
     - xenial
   - name: Debian
     versions:
-    - 7
-    - 8
-    - 9
-
+    - wheezy
+    - jessie
+    - stretch
 
   galaxy_tags: 
-    - nagios-client
+    - nagios
     - monitoring
+    - client
     
 
 dependencies: []
