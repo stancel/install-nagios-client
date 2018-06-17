@@ -34,6 +34,7 @@
     section: 
     option: server_address
     value: "{{ server_fqdn }}"
+    no_extra_spaces: yes
 
 - name: "Copying commands.cfg from this role/files to remote machine to tell Nagios what to monitor"
   copy: 
