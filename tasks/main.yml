@@ -46,5 +46,6 @@
   notify: 
   - restart-nagios-nrpe-server
  
-
+- name: "Restart Nagios NRPE Server service for good measure"
+  service: name=nagios-nrpe-server state=restarted
 
