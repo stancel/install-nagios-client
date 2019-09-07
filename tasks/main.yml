@@ -1,9 +1,10 @@
 ---
-# tasks file for install-nagios-client
 
+# tasks file for install-nagios-client
 - name: "Update Apt package list and install Nagios client"
-  apt: name={{ item }}
-  update_cache: yes
+  apt: 
+    name: "{{ item }}"
+    update_cache: yes
   with_items: 
   - nagios-plugins
   - nagios-nrpe-server
